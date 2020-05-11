@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/*Comandos en común*/
+a{
+    text-decoration: none;
+}
+/* Portada */
+header{
+    height: 100vh;
+    width:100vw;
+    background: url(//i01.appmifile.com/webfile/globalimg/products/pc/D1S/top_bg.jpg) center no-repeat;
+    background-size: auto;
+    background-size: 100vw 47.54vw;
+}
+.titulo1{
+    position: relative;
+    top:40vh;
+    right:25vw;
+    color:#000;
+    font: 4em "montserrat";
+    text-align: center;
+}
+.button{
+    position: relative;
+    top:47vh;
+    left:17vw;
+    border-radius: 0.5em;
+    padding:1em;
+    border: 2px solid rgb(255, 140, 9);
+    color:#fff;
+    font: 1.5em "raleway";
+    background-color: rgb(255, 140, 9);
+}
+.button:hover{
+    color:rgb(255, 140, 9);
+    background-color: #fff;
+}
+.header-none{
+    display: none;
+}
+/* Manual */
+.contenedor{
+    display:grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas: 
+    "c1 c1 c1 "
+    "c2 c3 c3 "
+    "c2 c3 c3 ";
+}
+.nav{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 140, 9);
+    height: 20vh;
+    width: 100vw;
+    grid-area:c1;
+}
+.titulo-nav{
+    font:3em "montserrat";
+}
+.autor{
+    font: 1.5em "raleway";
+}
+.button2{
+    margin-left: 3em;
+    border-radius: 0.5em;
+    padding:1em;
+    border: 2px solid rgb(255, 140, 9);
+    color:rgb(255, 140, 9);
+    font: 1.5em "raleway";
+    background-color: #fff
+}
+.button2:hover{
+    color:black;
+}
+.aside{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 20vw;
+    background-color: #d4e8fc;
+    grid-area:c2;
+}
+.indice{
+    flex:1;
+    margin-top: 1em;
+    font: 2em "Oswald"
+}
+.links{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex:1;
+    padding-left: 1em;
+    font: 1.3em "raleway" ;
+    color:#fff;
+    background-color: #000;
+    width: 100%;
+}
+.section{
+    height:80vh;
+    width: 80vw;
+    overflow-y: scroll;
+    grid-area:c3;
+}
+.titulo0{
+    padding: 1em 3em;
+    font: bold 2em "open sans";
+    text-align:center;
+}
+p{
+
+    font:1.5em "lato";
+    padding: 3em;
+}
