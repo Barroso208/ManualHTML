@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Noto+Sans&family=Oswald&family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="manual.css">
+    <title>Manual</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <h1 class="titulo1"> Manual de mi <br> tel&eacute;fono m&oacute;vil</h1>
+        <button class="button" onclick="myFunction()" >COMENZAR </button>
+    </header>
+    <div class="contenedor">
+        <nav class="nav">
+            <div>
+            <h1 class="titulo-nav">Manual de uso </h1>
+            <h2 class="autor"><strong>Realizado por:</strong>Alejandro Barroso</h2>
+            </div>
+            <button class="button2" onclick="myFunction()" >PORTADA </button>
+        </nav>
+        <aside class="aside">
+            <h2 class="indice">&Iacute;ndice</h2>
+            <a href="#div1" class="links">1. Ajustes generales</a>
+            <a href="#div2" class="links">2. Llamadas</a>
+            <a href="#div3" class="links">3. Aplicaciones</a>
+        </aside>
+        <section class="section">
+            <div id="div1">
+            <h2 class="titulo0">1. Ajustes generales</h2>
+            <p>     Wi-Fi.-  Si tenemos contratado con un operador acceso a internet desdenuestra casa,  conectaremos nuestro terminal a esta red Wi-Fi.La primera vez  que nos conectemos hay que introducir en el móvil una clave que aparece en el router   o que te da laempresa de telefonía. <br><br> Datos.- Si no tienes internet en casa y nos queremos conectar a internet,tenemos que tener contratada la tarifa de datos. <br><br> RECUERDA  CUANDO VIAJES SOLICITAR LA CLAVE DE ACCESO WIFIEN EL HOTEL EN EL QUE ESTÉS INSTALADO/A O CUANDO VISITESGRANDES   CENTROS   COMERCIALES,   BIBLIOTECAS,   CAFETERÍASETC.A  VECES   ES   LIBRE   (   NO   NECESITA  CLAVE   )   Y   SIEMPRE   SERÁGRATUITA <br><br> Cuenta de correo electrónico.- Para tener acceso a los servicios de internetes necesario tener una cuenta de correo. En caso de que no tengasnecesitarás crear una. <br><br>  Pantalla.- desde esta opción puedes modificar lo referente a la pantalla:fondo, brillo, tamaño de fuente (letra)<br><br> Sonido.- desde aquí puedes modificar el volumen, elegir el tono de llamada,el tono de recepción de mensajes, etc.<br><br>Seguridad.-<br><br>Para encender el teléfono se necesita el código PIN.  Son 4 dígitos que vienen con el teléfono y que podemos cambiar ( como la clavede una tarjeta bancaria). Si se acaba la batería o lo apagamos cuando estamos en el cine o cuando vamos a una charla, nos pedirá el código PIN al volverlo a encender. Esta función se utiliza frecuentemente por eso es importante que lo recuerdes.  Si nos equivocamos tres veces, nos pedirá otra contraseña (código PUK)que nos da la empresa de telefonía cuando compras el teléfono. <br><br> CONSEJO: INTENTA  QUE LA CLAVE SEA MUY FÁCIL DE RECORDAR PARA TI O ANÓTALA EN UN LUGAR QUE RECUERDES EN CASA JUNTO CON EL CÓDIGO PUK <br><br>Bloqueo de pantalla y contraseñas– Puedes bloquear el acceso atu teléfono con una clave para bloquear/desbloquear la pantalla.Si no lo utilizamos durante un espacio de tiempo (un minutoaproximadamente) se apaga la pantalla pero no el teléfono.Cuando lo queremos utilizar de nuevo ponemos la contraseña.Nos da más seguridad si lo perdemos. </p>
+            <div id="div2">
+            <h2 class="titulo0">2. Llamadas</h2>
+            <p> <br><br> Al   presionar   sobre   el   icono   de   “Llamadas”   o“contactos” nos aparece una pantalla en la que vemostodos nuestros contactos ordenados alfabéticamente.<br><br>Pulsando en cualquiera de ellos se realiza la llamada directamente.<br><br>Pulsando sobre el contacto nos aparece la pantalla para dar de alta un nuevo contacto.</p>
+            </div>
+            <div id="div3">
+            <h2 class="titulo0">3. Aplicaciones</h2>
+            <p>En este apartado vamos a hablar de las aplicaciones moviles en general, desde como instalarlas hasta como usarlas. <br><br> Para instalar una aplicación debes ir  a la play store, buscar la aplicación he instalarla. Una vez instalada la aplicación tienes que pulsar el icono de esta para acceder a ella y poder usarla. <br><br> Si mantienes pulsado el icono de la aplicación la podras moverla por la pantalla</p>
+            </div>
+        </section>
+    </div>
+    <script>
+        function myFunction(){
+            let y = document.getElementById("header");
+            if(y.className === "header"){
+                y.className += "-none";
+            }else{
+                y.className = "header";
+            }
+        }
+    </script>
+</body>
+</html>
