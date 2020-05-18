@@ -9,24 +9,29 @@
 </head>
 <body>
     <header class="header" id="header">
-        <h1 class="titulo1"> Manual de mi <br> tel&eacute;fono m&oacute;vil</h1>
-        <button class="button" onclick="myFunction()" >COMENZAR </button>
+        <div class="flex flex1">
+            <h1 class="titulo1"> Manual de mi <br> tel&eacute;fono m&oacute;vil</h1>
+        </div>
+        <div class="flex flex2">
+            <button class="button" onclick="myFunction()" >COMENZAR </button>
+        </div>
     </header>
     <div class="contenedor">
-        <nav class="nav">
-            <div>
+        <nav class="nav" id="nav">
+            <div class="div-titulo">
             <h1 class="titulo-nav">Manual de uso </h1>
-            <h2 class="autor"><strong>Realizado por:</strong>Alejandro Barroso</h2>
+            <h2 class="autor"><b>Realizado por:</b>Alejandro Barroso</h2>
             </div>
             <button class="button2" onclick="myFunction()" >PORTADA </button>
-        </nav>
+        </nav> 
         <aside class="aside">
             <h2 class="indice">&Iacute;ndice</h2>
-            <a href="#div1" class="links">1. Ajustes generales</a>
-            <a href="#div2" class="links">2. Llamadas</a>
+            <a href="#div1" id="primero" class="links">1. Ajustes generales</a>
+            <a href="#div2" id="segundo" class="links">2. Llamadas</a>
             <a href="#div3" class="links">3. Aplicaciones</a>
         </aside>
-        <section class="section">
+        <section class="section"id="section" >
+            <a id="indice" href="#nav"><button class="button3">Índice</button></a>
             <div id="div1">
             <h2 class="titulo0">1. Ajustes generales</h2>
             <p>     Wi-Fi.-  Si tenemos contratado con un operador acceso a internet desdenuestra casa,  conectaremos nuestro terminal a esta red Wi-Fi.La primera vez  que nos conectemos hay que introducir en el móvil una clave que aparece en el router   o que te da laempresa de telefonía. <br><br> Datos.- Si no tienes internet en casa y nos queremos conectar a internet,tenemos que tener contratada la tarifa de datos. <br><br> RECUERDA  CUANDO VIAJES SOLICITAR LA CLAVE DE ACCESO WIFIEN EL HOTEL EN EL QUE ESTÉS INSTALADO/A O CUANDO VISITESGRANDES   CENTROS   COMERCIALES,   BIBLIOTECAS,   CAFETERÍASETC.A  VECES   ES   LIBRE   (   NO   NECESITA  CLAVE   )   Y   SIEMPRE   SERÁGRATUITA <br><br> Cuenta de correo electrónico.- Para tener acceso a los servicios de internetes necesario tener una cuenta de correo. En caso de que no tengasnecesitarás crear una. <br><br>  Pantalla.- desde esta opción puedes modificar lo referente a la pantalla:fondo, brillo, tamaño de fuente (letra)<br><br> Sonido.- desde aquí puedes modificar el volumen, elegir el tono de llamada,el tono de recepción de mensajes, etc.<br><br>Seguridad.-<br><br>Para encender el teléfono se necesita el código PIN.  Son 4 dígitos que vienen con el teléfono y que podemos cambiar ( como la clavede una tarjeta bancaria). Si se acaba la batería o lo apagamos cuando estamos en el cine o cuando vamos a una charla, nos pedirá el código PIN al volverlo a encender. Esta función se utiliza frecuentemente por eso es importante que lo recuerdes.  Si nos equivocamos tres veces, nos pedirá otra contraseña (código PUK)que nos da la empresa de telefonía cuando compras el teléfono. <br><br> CONSEJO: INTENTA  QUE LA CLAVE SEA MUY FÁCIL DE RECORDAR PARA TI O ANÓTALA EN UN LUGAR QUE RECUERDES EN CASA JUNTO CON EL CÓDIGO PUK <br><br>Bloqueo de pantalla y contraseñas– Puedes bloquear el acceso atu teléfono con una clave para bloquear/desbloquear la pantalla.Si no lo utilizamos durante un espacio de tiempo (un minutoaproximadamente) se apaga la pantalla pero no el teléfono.Cuando lo queremos utilizar de nuevo ponemos la contraseña.Nos da más seguridad si lo perdemos. </p>
@@ -49,6 +54,22 @@
                 y.className = "header";
             }
         }
+        let button1 = document.getElementById("primero"),
+            button2 = document.getElementById("segundo"),
+            button3 = document.getElementById("tercero"),
+            indice  = document.getElementById("indice");
+            function botones(){
+                if(window.innerWidth<=600){
+                    indice.style.display= ("block");
+                }
+            }
+            indice.onclick = function botones(){
+                indice.style.display =("none");
+            }
+            button1.onclick = function(){ botones();};
+            button2.onclick = function(){ botones();};
+            button3.onclick = function(){ botones();};
+
     </script>
 </body>
 </html>
